@@ -22,7 +22,7 @@ public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy	= GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@NotNull(message = "O atributo Nome é Obrigatório!")
 	private String nome;
@@ -41,11 +41,11 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
